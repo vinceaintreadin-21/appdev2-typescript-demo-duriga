@@ -1,0 +1,8 @@
+"use strict";
+let age = 31;
+// ...
+age = '31';
+age = true;
+age = {};
+age = ['', '']
+console.log(typeof age);

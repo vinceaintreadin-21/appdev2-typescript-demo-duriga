@@ -18,8 +18,8 @@ let user: {
         id: number
     }
 } = {
-    name: "Elmer",
-    age: 31,
+    name: "Vincent",
+    age: 21,
     hobbies: ["Eating", "Sleeping"],
     role: {
         description: 'admin',
@@ -38,3 +38,22 @@ data = {
     name: 'Elmer'
     // isPartTimeInstructor: true
 }
+
+const greetings = () => {
+    console.log(`Welcome to your dashboard ${user.name}!`)
+}
+
+const showRole = () => {
+    console.log(`Your role in this system is ${user.role.description}`)
+}
+
+const showHobbies = () => {
+    console.log(`Your hobbies are ${user.hobbies[0]}`)
+    console.log(`Your hobbies are ${user.hobbies[1]}`)
+}
+
+greetings()
+showRole()
+showHobbies()
+
+

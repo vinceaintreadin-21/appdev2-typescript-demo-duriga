@@ -1,11 +1,17 @@
 (() => {
     // Literal Types (Alternative to Enum)
-    let userRole: 'admin' | 'guess' | 'teacher' | 'student' = 'admin'
+    let direction: 'up' | 'down' | 'left' | 'right' = 'up'
 
-    userRole = 'guess'
-    // anotherUserRole = 'superadmin'
+    direction = 'up'
 
-    function access(role: 'admin' | 'guess' | 'teacher' | 'student') {
-        // ...
+    function navigation(nav: 'up' | 'down' | 'left' | 'right') {
+        console.log('Navigating..' + nav)
     }
+
+    navigation("up")
+    navigation(direction)
+
+
+    //Literal types are basically a picky version of data types, it's fixed and won't alternate once stated
+    //One of the core benefits that it offers here is typo protection, this makes TypeScript detect the error immediately 
 })

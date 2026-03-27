@@ -2,10 +2,11 @@ let hobbies = ["Eating", "Watching"]
 
 // hobbies.push(10)
 
-// let userList: (string | number)[];
-let userList: Array<string | number>;
+// let userList: (string | number | boolean)[];
+let userList: Array<string | number | boolean>; 
+//in this LOC, you're basically telling TS to accept any data that fits the data types assigned in an array, other than that TS rejects it
 
-userList = ["Elmer", "Elmer123", 123456]
+userList = ["Elmer", "Elmer123", 123456 , true]
 
 // console.log(userList)
 
@@ -25,7 +26,9 @@ let user: {
         description: 'admin',
         id: 1
     }
-}
+} //object works the same way as in JS but since its TS, you have to assign its variable
+
+
 
 // Must not null or undefined
 let val: {} = "Elmer Alvarado"

@@ -47,3 +47,29 @@ Covers arrays with union types, object typing with nested properties, and the `R
 
 ## 05-enum.ts
 Introduces enums, specifically string enums, and shows how to assign `enum` values properly.
+
+## 06-alternative-to-enum.ts
+Literal types are basically a picky version of data types, it's fixed and won't alternate once stated. 
+
+## 07-custom-type-role.ts
+Type aliases creates strict 'blueprint' for users, roles and etc, ensuring that once it's called, it can only process a pre-defined set of valid categories.
+
+## 08-functions.ts
+The LOCs of this file demonstrates strict rules of function behavior by defining the return types enforcing specific callback structures for asynchronous-style logic, and integrating functions as typed methods within object blueprints.
+
+## 09-special-types.ts
+The script utilizes `Union Types` and `Strict Null Checks` to know what is intentionally empty or unintitialized state. It also covers the `maybe` pattern where you'll see `string | null` where it basically says 'Im an empty placeholder at first but not for long once i receive data'
+
+## 10-form.html and 10-type-narrowing.ts
+This script shows how to determine uncertainty of whether an HTML element exist using this `!` and this `?` or `if(...)`
+
+This `!` is a non-null assertion where you tell TS that its there
+This `?` is optional chaining, if the element is missing it simply return undefined instead of throwing an error
+This `if(...)` or type narrowing is a way of proving whether the element is existing before returning
+
+## 11-optional.ts
+-Optional Parameters/Properties(`?`) Adding this just means that a variable is allowed to be undefined
+-Falsy(`||`): its commonly used in profiles (e.g., `user.name || "Unknown"`) where you check for falsy values
+-Nullish Coalescing(`??`): this is used when a variable is null or undefined, hence making this operator more precise (e.g., when input = "" then input ?? null, this respects that the empty string is still a null)
+
+

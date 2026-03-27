@@ -1,14 +1,16 @@
 (() => {
-    enum Role {
-        // SuperAdmin,
-        // SuperAdmin = 1,
-        SuperAdmin = 'SuperAdmin',
-        // Teacher,
-        Teacher = 'Teacher',
-        // Student,
-        Student = 'Student',
+    enum Direction {
+        Up = 'W',
+        Down = 'S',
+        Left = 'A',
+        Right = 'D'
     }
 
-    // let userRole: Role = 0;
-    let userRole: Role = Role.SuperAdmin;
+    let direction: Direction = Direction.Up;
+    let alternateDirection: Direction = Direction.Up
+
+    //Enum is basically an identification for your stated datas
+
+    //For example you want to use 'Up', the system will think that you're using the keybind 'W'
 })
+

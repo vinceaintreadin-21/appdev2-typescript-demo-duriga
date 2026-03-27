@@ -29,9 +29,21 @@
     // () => {} - arrow function
     // () => void - function type
     function performJob(cb: (m: string) => void) {  // you can also use cb: Function but () => void is the best practice
-        // ...
-        cb('Job Done!')
+        console.log('Starting task...')
+
+        const task = 'Refactoring code'
+        const success = true
+
+        if (success) {
+            cb('Job Done!' + task + 'successfully')
+        } else {
+            cb(task + 'was unsuccessful')
+        }
     }
+
+    performJob((message) => {
+        console.log("Notification: " + message);
+    })
 
     let logMsg = (msg: string): void => {
         console.log(msg)

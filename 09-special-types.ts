@@ -10,6 +10,10 @@ b = null
 b = "Hi"
 // b = 10
 
+if (b !== null) {
+    console.log(b.toUpperCase());
+}
+
 // Special Type - undefined
 let c: undefined;
 

@@ -13,9 +13,26 @@
 
     let userRole: Role = 'admin'
 
-    // ...
+    userRole = 'student'
+    userRole = 'teacher'
 
     function access(role: Role) {
-        // ...
+        switch (role) {
+            case 'admin':
+                console.log('Full access');
+                break;
+            case 'teacher':
+                console.log('Limited access');
+                break;
+            case 'student':
+                console.log('View acccess');
+                break;
+            case 'guess':
+                console.log('Restricted access')
+                break;
+            default:
+                console.log('role unidentified')
+
+        }
     }
 })
